@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página con JavaScript</title>
+    <style>
+        .mi-elemento {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola, JavaScript!</h1>
-    <!-- Tu código JavaScript va aquí -->
-    <script src="prueba.js"></script>
+    <button id="miBoton">Texto Original del Botón</button>
+
+    <div class="mi-elemento">Haz clic aquí</div>
+
+    <button id="miSegundoBoton">Haz clic en mí</button>
+
+    <script>
+        let boton = document.querySelector("#miBoton");
+        boton.addEventListener("click", function() {
+            boton.textContent = "Nuevo Texto del Botón";
+        });
+
+        let elemento = document.querySelector(".mi-elemento");
+        elemento.addEventListener("click", function() {
+            elemento.style.backgroundColor = "blue";
+        });
+
+
+        let segundoBoton = document.querySelector("#miSegundoBoton");
+        segundoBoton.addEventListener("click", function() {
+            alert("Botón clickeado!");
+        });
+    </script>
 </body>
 </html>
