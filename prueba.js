@@ -36,7 +36,7 @@
 // document.write("<br>");
 // document.write(numeros[1]);
 
-
+//mostar cosas del  objeto
 // let pc = {
 // procesador :"inter core i5",
 //     ram : "16",
@@ -99,3 +99,21 @@
 // for (let nombre of nombres) {
 //     console.log(nombre);
 // }
+
+
+// let boton = document.querySelector("#miBoton");
+
+// boton.addEventListener("click", function() {
+//     boton.textContent = "Nuevo Texto del Botón";
+// });
+
+// let elemento = document.querySelector(".mi-elemento");
+// elemento.addEventListener("click", function() {
+//     elemento.style.backgroundColor = "blue";
+// });
+
+
+// let segundoBoton = document.querySelector("#miSegundoBoton");
+// segundoBoton.addEventListener("click", function() {
+//     alert("Botón clickeado!");
+// });
